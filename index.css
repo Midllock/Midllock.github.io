@@ -1,0 +1,32 @@
+head, html{
+   background-color:black;
+   color: white;
+   overflow-x: hidden;
+   font-family: 'Lato', sans-serif; 
+}
+
+.Midllock{
+   position: absolute;
+   font-size: 30px;
+   top:20%;
+   left: 20%;
+}
+.contacts{  
+   position: absolute;
+   top: 32%;
+   left: 23%;
+}
+.instagram{
+   height: 30px;
+   width: 30px;
+   margin-right: 18px;
+}
+.discord{
+   height: 30px;
+   width: 30px;
+}
+.github{
+   height: 30px;
+   width: 30px;
+   margin-left: 18px;
+}
