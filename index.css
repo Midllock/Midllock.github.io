@@ -1,32 +1,464 @@
-head, html{
-   background-color:black;
-   color: white;
-   overflow-x: hidden;
-   font-family: 'Lato', sans-serif; 
+body, html{
+  background-color: #d2b305;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+    
+}
+a{
+  text-decoration: none;
+}
+.header{
+  position: absolute;
+
+  background-image: url("ted1.png");
+  background-position-x: -7pt;
+  background-size: 107%;
+
+  width: 100%;
+  height: 80%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.logo{
+  position: absolute;
+  top:4%;
+  width: 350px;
+  height: 250px;  left: 40px;
+}
+.nadpis{
+  color:black;
+  position: absolute;
+  top:0%; 
+  left:36%;
+  font-size: 120px;
+  z-index: 1;
+}
+.up{
+  position: absolute;
+  top:0%;
+  width: 1955px;
+  height: 800px;
+  left: 0%;
+  z-index: 1;
+}
+.down{
+  top:20;
+  z-index: 1;
+}
+.Informace{
+  color: black;
+  position: absolute;
+  top: 71%;
+  right:1pt;
+  font-size: 26px;
+  z-index: 1;
+}
+.Nadpisinformace{
+  position: absolute;
+  color: black; 
+  top: 80%;
+  font-size: 35px;
+  left:9%;
+  z-index: 1;
+}
+.mapa{
+  position: absolute;
+  width:700px;
+  height:400px;
+  top:120%;
+  right: 8%;
+  z-index: 1;
 }
 
-.Midllock{
-   position: absolute;
-   font-size: 30px;
-   top:20%;
-   left: 20%;
+.parkoviste{
+  position: absolute;
+  top: 143%;
+  font-size: 24px;
+  left: 4%;
+  color: black; 
+  z-index: 1;
 }
-.contacts{  
-   position: absolute;
-   top: 32%;
-   left: 23%;
+
+.poz{
+  position: absolute;
+  top:230%;
+  width: 1864px;
+  height: 600px;
+  left: 0%;
+  z-index: 1;
 }
-.instagram{
-   height: 30px;
-   width: 30px;
-   margin-right: 18px;
+
+.contats{
+  position: absolute;
+  color: black;
+  top: 260%;
+  right: 2%;
+  font-size: 20px;
+  z-index: 1;
 }
-.discord{
-   height: 30px;
-   width: 30px;
+
+.kontakty_nadpis{
+  margin-left: 68pt;
+  font-size: 28px;
 }
-.github{
-   height: 30px;
-   width: 30px;
-   margin-left: 18px;
+
+.kčt{
+  position: absolute;
+  top:262%;
+  left: 9%;
+  width: 160px;
+  height: 160px;
+  z-index: 1;
+}
+
+* {box-sizing:border-box}
+
+.galerie{
+  position:absolute;
+  color: black;
+  top: 180%;
+  right: 42%;
+  font-size: 38px;
+}
+
+.slideshow-container{
+  position: absolute;
+  right: 31%;
+  top:190%;
+  width: 600px;
+  height: 500px;
+  z-index: 1;
+}
+
+.mySlides {
+  display: none;
+  z-index: 0;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width:auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 1;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  z-index: 1;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  z-index: 1;
+}
+
+.text {
+  position: absolute;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  z-index: 1;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+button {
+  margin: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+img {
+  max-width: 100%;
+  max-height: 400px;
+}
+body,html{
+    width:180%;
+    height: 100%;
+  }
+  body{
+    margin:0;
+    padding:0;
+    background:#d2b305;
+  }
+  .bubbles{
+    position:absolute;
+    width: 100%;
+    height: 210%;
+    z-index:0;
+    overflow:hidden;
+    top:0%;
+    left:0%;
+  }
+  .bubble{
+    position: absolute;
+    bottom:-200px;
+    width:40px;
+    height: 40px;
+    background:#f1f1f1;
+    border-radius:40%;
+    opacity:0.2;
+    animation: rise 10s infinite ease-in;
+  }
+  .bubble:nth-child(1){
+    width:40px;
+    height:40px;
+    left:10%;
+    animation-duration:8s;
+  }
+  .bubble:nth-child(2){
+    width:20px;
+    height:20px;
+    left:20%;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(3){
+    width:50px;
+    height:50px;
+    left:35%;
+    animation-duration:7s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(4){
+    width: 40px;
+    height:40px;
+    left:50%;
+    animation-duration:11s;
+    animation-delay:0s;
+  }
+  .bubble:nth-child(5){
+    width:35px;
+    height:35px;
+    left:55%;
+    animation-duration:6s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(6){
+    width:45px;
+    height:45px;
+    left:65%;
+    animation-duration:8s;
+    animation-delay:3s;
+  }
+  .bubble:nth-child(7){
+    width:60px;
+    height:60px;
+    left:70%;
+    animation-duration:12s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(8){
+    width:25px;
+    height:25px;
+    left:80%;
+    animation-duration:6s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(9){
+    width:15px;
+    height:15px;
+    left:70%;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(10){
+    width:60px;
+    height:60px;
+    left:25%;
+    animation-duration:10s;
+    animation-delay:4s;
+  }
+  .bubble:nth-child(11){
+    width:15px;
+    height:15px;
+    left:60%;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(12){
+    width:60px;
+    height:60px;
+    left:15%;
+    animation-duration:10s;
+    animation-delay:4s; 
+  }
+  @keyframes rise{
+    0%{
+      bottom:-100px;
+      transform:translateX(0);
+    }
+    50%{
+      transform:translate(100px);
+    }
+    100%{
+      bottom:1080px;
+      transform:translateX(-200px);
+    }
+  }
+@media (max-width: 768px){
+  .logo{
+    width: 70px;
+    height: 60px;
+    left: 5%;
+  }
+  .nadpis{
+    font-size: 30px;
+  }
+  .Informace{
+    font-size: 6pt;
+    top: 20%;
+  }
+  .Nadpisinformace{
+    font-size: 10px;
+    top:23%;
+    left:4%;
+  }
+  .mapa{
+    top: 35%;
+    width: 40%;
+    height: 15%;
+  }
+  .parkoviste{
+    font-size: 8px;
+    left: 2%;
+    top: 41%;
+  }
+  .galerie{
+    font-size: 10px;
+    top: 55%;
+  }
+  .slideshow-container{
+    width: 170px;
+    height: 170px;
+    top:60%;
+    left:27%;
+  }
+  .poz{
+    top: 70%;
+    width: 600px;
+    height: 150px;
+  }
+  .contats{
+    font-size: 5px;
+    top: 85%;
+  }
+  .kontakty_nadpis{
+    font-size: 8px;
+    margin: 0%;
+  }
+  .kčt{
+    width: 40px;
+    height: 40px;
+    top: 85%;
+  }
+  .bubbles{
+      width: 100px;
+      height: 210px;
+  }
+  .bubble{
+      bottom:-50px;
+      width:40px;
+      height: 40px;
+      border-radius:40%;
+  }
+  .bubble:nth-child(1){
+    width:15px;
+    height:15px;
+    left: 60%;
+    animation-duration:8s;
+  }
+  .bubble:nth-child(2){
+    width:15px;
+    height:15px;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(3){
+    width:15px;
+    height:15px;
+    animation-duration:7s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(4){
+    width:15px;
+    height:15px;
+    animation-duration:11s;
+    animation-delay:0s;
+  }
+  .bubble:nth-child(5){
+    width:15px;
+    height:15px;
+    animation-duration:6s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(6){
+    width:15px;
+    height:15px;
+    animation-duration:8s;
+    animation-delay:3s;
+  }
+  .bubble:nth-child(7){
+    width:15px;
+    height:15px;
+    animation-duration:12s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(8){
+    width:15px;
+    height:15px;
+    animation-duration:6s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(9){
+    width:15px;
+    height:15px;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(10){
+    width:22px;
+    height:22px;
+    animation-duration:10s;
+    animation-delay:4s;
+  }
+  .bubble:nth-child(11){
+    width:40px;
+    height:40px;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(12){
+    width:15px;
+    height:15px;
+    animation-duration:10s;
+    animation-delay:4s; 
+  }
 }
