@@ -3,20 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midllock</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg" href="img/logo.svg">
+    <title>Mývalové Starý Harcov Liberec</title>
 </head>
 <body>
-    <div class="contacts">
-        <a href="https://www.instagram.com/__rostik__kostik__/"><img class="instagram" src="baba-ghanoush-falafel-tabbouleh-party-battle-egg-salad-white-instagram-logo-edf4c552de5e7a28bd2e2629e7a3d979.png"></a>
-        <a href="https://discord.gg/exC58tSm"><img class="discord" src="cbqj858gl0vpk3b3lvvv3sfi1l-d3fb4dca309cd610774ca80b39e71049.png"> </a>
-        <a href="https://github.com/Midllock"><img class="github" src="github-pages-logo-repository-fork-github-86eddab19cbc3ae293ada0fe0fb9e27d.png"></a> 
+    <button class="hamburger" aria-label="Otevřít menu" aria-expanded="false">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <div class="mains">
+        <h1>Mývalové Starý Harcov Liberec</h1>
+        <div class="menu">
+            <a href="#o nas" class="tlacitko-info">O nás</a>
+            <a href="#trenery" class="tlacitko-info">Trenéři</a>
+            <a href="#kontakt" class="tlacitko-info">Kontakty</a>
+            <a href="#prihlaseniForm" class="tlacitko-info">Příhláška</a>
+        </div>
+        <img src="img/logo2.svg" alt="Logo týmu" class="logo">
     </div>
-
-
-    <span class="Midllock"> Welcome,<br>
-         My name is Midllock </span>
-    
-</body> 
+    <div class="tabule_info">
+        <section class="diagonal-bg"></section>
+        <div class="text" id="o nas">
+            <p class="info">O nás</p><br>Jsme menší, ale o to přátelštější tým, který za sebou nese už kus zajímavé historie. Naše komunita se soustředí <br> primárně na florbal, sport, který naše děti milují a kterému se věnují s maximálním nasazením.<br>Florbal u nás není jen o tréninku, je to o týmovém duchu a radosti ze hry.<br> Naše mladé talenty mají na programu dvakrát týdně intenzivní tréninky, kde pilují techniku, taktiku a kondici pod vedením zkušených trenérů.<br><br>
+O víkendech pak naplno zažíváme adrenalin při zápasech v rámci ligy Českého florbalu.<br> Zde mohou děti nejen změřit síly s ostatními, ale především si užít atmosféru skutečného sportovního klání. <br>  Jsme hrdí na každý pokrok a každou zkušenost, kterou naše děti na hřišti získávají.<br>Jsme víc než jen tým – jsme rodina, která podporuje své členy na hřišti i mimo něj.</div>
+    </div>
+    <h2 id="trenery">Trenéři</h2>
+    <div class="trenery-container" id="trenery-container"></div>
+    <h3 id="kontakt">Kontakty</h3>
+    <div class="kontakt-container" id="kontakt-container"></div>
+    <div class="prihlaska"></div>
+    <div id="prihlaska-container">
+    <h4>Formulář přihlášky</h4>
+    <form id="prihlaseniForm">
+        <input type="text" id="jmeno" placeholder="Jméno" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="zprava" placeholder="Zpráva" class="textarea" width="100%" required></textarea>
+        <button type="submit">Odeslat</button>
+    </form>
+    <ul id="seznamPrihlasek"></ul>
+    </div>
+    <footer><p>&copy; 2025 Mývalové Starý Harcov Liberec <br>Všechna práva vyhrazena. <br> Design a vývoj: Rostislav Patočka
+    </p></footer>
+    <script src="script.js"></script>
+</body>
 </html>
